@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/webp" href="src/img/logos/notext-bn-logo.webp" />
+  <meta name="title" content="Balance Network">
+  <title>Balance Network</title>
+  <meta name="description"
+    content="Balance Network is All-in-One Blockchain Web 3.0 Platform. Welcome, you have found the Balance between all digital src.Let’s start digitizing!">
+  <!-- <meta name="keywords"
+    content="balance, balancenetwork, Balance Network, BLN, BLN token, token, crypto, coin, BLN coin, blockchain, web3, web3.0, exchange, coin exchange, token exchange, swap, coin swap, token swap, multiswap, coin multiswap, token multiswap, game, metaverse, metagame, launchpad, ido, nft, nft marketplace, explorer, wallet, ios, android, web, mobile"> -->
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Balance Network">
+    <!--Open Graph for Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@balance_web3">
+    <meta name="twitter:creator" content="@balance_web3">
+    <meta name="twitter:title" content="Balance Network">
+    <meta name="twitter:image" content="https://src.balancenetwork.io/logos/bn-logo-32px-white-bg.png">
+     <!--Open Graph for Facebook -->
+    <meta property ="og:title" content="Balance Network"/>
+    <meta property="og:description" content="Balance Network">
+    <meta property="og:url" content="balancenetwork.io">
+    <meta property ="og:image" content="https://src.balancenetwork.io/logos/bn-logo-32px-white-bg.png"/>
+    <meta property ="og:creator" content="@balance_web3"/>
+    <meta property ="og:site" content="@balance_web3"/>
+  
+  
+    <!--Tag of Meta Publisher -->
+    <meta name="abstract" content="Balance network olarak sizlere Cryptocurrency swap, NFTs, DEX, CEX, mobile wallet, 
+    marketcap, launchpad, multi-chain köprüler ve multi-chain swap hizmetleri sunuyoruz. Yüzlerce jeton ve işlem 
+    çiftinin keyfini çıkarın. Balance Network ile işlem hacmine göre önde gelen kripto borsalarından birine katılabilirsiniz. 
+    Spot, vadeli işlem seçenekleri, sürekli takas ticareti, DeFi, borç verme, NFTS, çok zincirli köprüler ve madencilik hizmetleri sunuyoruz." />
+    <meta name="Publisher" content="info@balancenetwork.com"/>
+    <!-- <meta name="keywords" content="BalanceNetwork,BalanceNetworkBlockchain, BalanceNetworkExchange,borsa, al sat,BalanceNetworkWeb3,crypto,coin,kriptoCryptocurrency,web3.0,BalanceNetworkCryptocurrency,
+    BalanceNetworkToken, BLNToken,BLN,BalanceNetworkNFT,NFT,NFTMarketPlace,Web3,BalanceNetworkSwap, BalanceNetworkMulti-swap, TokenSwap, BalanceNetworkLaunchPad,IDOLaunchPad,
+    BalanceNetworkExplorer, BalanceNetworkWalletApp,WalletApp,BalanceNetworkMobileApp,BalanceNetworkMobileExchange,kriptopara,kriptoparaborsası,metaverse,metagame,game, Metaverseoyun"/> -->
+  
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="src/css/normalize.css"/>
+  <link rel="stylesheet" href="src/css/newslide.css" />
+  <link rel="stylesheet" href="src/css/newslidetwo.css" />
+  <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/css/animate.css">
+  <link rel="stylesheet" href="src/css/all.min.css" />
+  <link rel="stylesheet" href="src/css/mdb.min.css" />
+  <link rel="stylesheet" href="src/css/sweetalert2.min.css">
+  <link rel="stylesheet" href="src/css/morris.css">
+  <link rel="stylesheet" href="src/css/animate.css" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/roadmap.css" />
+  <link rel="stylesheet" href="src/css/popup.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <!------------------ REDİRECT'E TÜRKÇE LİNKİNİ EKLEYECEĞİZ!!!!! ------------->
+
+
+  <style>
+    .green-color{
+      color: #a4c639;
+    }
+    .gray-color{
+      color: #c4c4c4;
+
+    }
+
+   
+  </style>
+</head>
+
+<body>
+
+  <div class="background-image"></div>
+
+  <!-- Scroll Top-->
+  <a class="scrollTop" title="scroll top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Cookie Box -->
+  <div class="cookie-box">
+    <div class="cookie-box-container">
+      <p id="xdenem">
+        We use cookies to improve your experience. To find out more, please read our "<a
+        href="https://docs.balancenetwork.io/views/About/privacypolicy.html" class="cookie-text" rel="nofollow" title="cookie consent" target="_blank">Privacy
+        Policy</a>". By
+      clicking
+      accept, you consent to our cookie and <a href="https://docs.balancenetwork.io/views/About/privacypolicy.html" title="BalanceNetworkPrivacyPolicy" rel="nofollow"
+        class="cookie-text" target="_blank">Privacy
+        Policy</a>. Or you may click “Decline” return to refuse to consent.
+      </p>
+      <a id="decline" class="cookie-btn" title="Decline">Decline</a>
+      <a id="accept" class="cookie-btn" title="Accept">Accept</a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade " style="margin-left: -20px !important;" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+          <a class="close" onclick="$('#modalContactForm').modal('hide');" title="close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix"></i>
+            <input type="text" id="fullname" class="form-control validate" />
+            <label data-error="rong" data-success="Right" for="fullname">Full Name</label>
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix"></i>
+            <input type="email" id="email" class="form-control validate" />
+            <label data-error="Wrong" data-success="Right" for="email">E-mail</label>
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-tag prefix"></i>
+            <input type="text" id="projectName" class="form-control validate" />
+            <label data-error="Wrong" data-success="Right" for="projectName">Project Name</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fas fa-pencil prefix"></i>
+            <textarea type="text" id="projectDescription" class="md-textarea form-control" rows="4"></textarea>
+            <label data-error="Wrong" data-success="Right" for="projectDescription">Project Description</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <a style="box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;" class="send-btn" id="sendMail" title="send mail">
+            Submit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg nav-bg-color sticky navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand resp-width" title="navbar">
+        <div class="logo">
+        </div>
+      </a>
+
+      <button class="navbar-toggler mx-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mx-auto justify-content-center " id="navbarSupportedContent">
+        <ul class="navbar-nav flex-wrap mx-auto justify-content-start paddd">
+          <li class="nav-item">
+            <a class="nav-link" href="https://exchange.balancenetwork.io" title="Exchange" rel="nofollow" target="_blank"  data-i18n="demo.menu.EXCHANGE">EXCHANGE</a>
+          </li>
+          <!---------Balancebit removed ---------->
+          <li class="nav-item dropdown mx-auto align-content-center">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" title="Swap"
+              aria-expanded="false" data-i18n="demo.menu.SWAP">
+              SWAP
+            </a>
+            <ul class="dropdown-menu nav-bg-color" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" target="_blank"
+                  href="https://swap.balancenetwork.io" title="Swap" rel="nofollow" data-i18n="demo.menu.SWAP"></a>
+              </li>
+              <p class="dropdown-divider"></p>
+
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" target="_blank"
+                  href="https://multiswap.balancenetwork.io" title="Multi Swap" rel="nofollow" data-i18n="demo.menu.MultiSwap">Multi Swap</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ido.balancenetwork.io" title="IDO" rel="nofollow" target="_blank">IDO</a>
+          </li>
+          <!------------------ NFT & -------------------->
+
+
+          <li class="nav-item dropdown mx-auto align-content-center">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" title="NFT"
+              aria-expanded="false">
+              NFT
+            </a>
+            <ul class="dropdown-menu nav-bg-color" aria-labelledby="navbarDropdown">
+              <li style="padding-left: -100px !important;" >
+                <a class="bg-transparent dropdown-item lang-text text-white" target="_blank"
+                  href="https://nft.balancenetwork.io" title="NFT" rel="nofollow">NFT</a>
+              </li>
+              <p class="dropdown-divider"></p>
+
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" target="_blank"
+                  href="https://nftgallery.balancenetwork.io/" title="NFT Gallery" rel="nofollow">NFT Gallery</a>
+              </li>
+              <p class="dropdown-divider"></p>
+
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" target="_blank"
+                  href="https://bridge.balancenetwork.io/" title="NFT Gallery" rel="nofollow">NFT Bridge</a>
+              </li>
+            </ul>
+          </li>
+
+
+
+          <!-----------------Market ---------------->
+          <li class="nav-item">
+            <a class="nav-link" href="https://market.balancenetwork.io" title="Market" rel="nofollow" target="_blank" data-i18n="demo.menu.MARKET">MARKET</a>
+          </li>
+
+          <li class="nav-item dropdown mx-auto align-content-center">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" title="Game"
+              aria-expanded="false" data-i18n="demo.menu.GAME">
+              GAME
+            </a>
+            <ul class="dropdown-menu nav-bg-color" aria-labelledby="navbarDropdown">
+
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" target="_blank"
+                  href="https://game.balancenetwork.io" title="Game" rel="nofollow">GAME ZONE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown mx-auto align-content-center">
+            <a class="nav-link dropdown-toggle" href="#" title="Wallet" rel="nofollow" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-i18n="demo.menu.WALLET">
+              WALLET
+            </a>
+            <ul class="dropdown-menu nav-bg-color" aria-labelledby="navbarDropdown">
+              <li style="padding-left: 18px;">
+                <a class="bg-transparent dropdown-item lang-text text-white"
+                  href="https://play.google.com/store/apps/details?id=io.balancenetwork.wallet" rel="nofollow" title="Balance Network" target="_blank"><img width= "47px" height= "auto" class="bullnavimg" src="src/img/bullicon.webp" alt="bullicon"></a>
+              </li>
+              <p class="dropdown-divider "></p>
+              <li style="padding-left: 28px !important;">
+                <a class="bg-transparent dropdown-item lang-text text-white" href="#" title="Apple Store"  rel="nofollow"><i
+                    class="fa-brands fa-apple gray-color fa-xl"></i></a>
+              </li>
+              <p class="dropdown-divider "></p>
+              <li style="padding-left: 30px !important;">
+                <a class="bg-transparent dropdown-item lang-text text-white"
+                  href="https://play.google.com/store/apps/details?id=io.balancenetwork.wallet" rel="nofollow" title="Play Store" target="_blank"><i
+                    class="fa-brands fa-android green-color fa-xl"></i></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="https://www.bscscan.com/address/0xE90334c19c798C3A18d81b8cd16594247D5B19dd" title="Explorer" rel="nofollow" target="_blank" data-i18n="demo.menu.EXPLORER">EXPLORER</a>
+          </li>
+          <li class="nav-item dropdown mx-auto align-content-center">
+            <a class="nav-link dropdown-toggle" href="#" title="INFO" rel="nofollow" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-i18n="demo.menu.INFO">
+              INFO
+            </a>
+            <ul class="dropdown-menu nav-bg-color" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" href="https://docs.balancenetwork.io" title="Documents" rel="nofollow"
+                  target="_blank"  data-i18n="demo.menu.Docs"></a>
+              </li>
+
+              <p class="dropdown-divider "></p>
+
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" href="https://docs.balancenetwork.io/views/Support/support.html" title="Support" rel="nofollow"
+                  target="_blank"  data-i18n="demo.menu.Support"></a>
+              </li>
+
+              <p class="dropdown-divider "></p>
+
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white"
+                  href="https://docs.balancenetwork.io/views/whitepaper.html" target="_blank" title="Token" rel="nofollow">BLN
+                  Token</a>
+              </li>
+
+              <p class="dropdown-divider "></p>
+
+              <li>
+                <a class="bg-transparent dropdown-item lang-text text-white" href="https://docs.balancenetwork.io/views/audit.html" title="Audit" rel="nofollow"
+                  target="_blank"  data-i18n="demo.menu.Audit"></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="button-container mx-right text-center d-flex align-items-center justify-content-center">
+          <a href="https://swap.balancenetwork.io" rel="nofollow" title="BalanceNetworkSwap" target="_blank" class="buy-btn btn-outline"  style="margin-left: 30px !important;" data-i18n="demo.menu.BUYBLN">BUY BLN</a>
+        </div>
+        <div class="lang-picker">
+          <span id="english">
+            <a class=""   title="BalanceNetwork">
+
+              <img style="width: 20px; height: 20px; border-radius: 25px;" src="src/img/langswitch/illustration-uk-flag_53876-18166.webp" alt="ukflag">
+              
+            </a>
+            
+          
+          </span>
+          <i>
+              <strong>&nbsp;
+              /
+            </strong>&nbsp;
+          </i>
+          <span >
+            <a id="turkce" title="BalanceNetwork" rel="nofollow">
+
+              <img style="width: 20px; height: 20px; border-radius: 25px;" src="src/img/langswitch/turkish.flag.webp" alt="turkishflag"></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+
+    <header>
+      <!-- 1. Box -->
+      <div class="row wow " >
+        <div class="box1 col-12 mt-10 mx-auto">
+          <!-- <img src="./src/img/box1.webp" alt=""> -->
+          <div class="box1-content">
+            <h2  data-i18n="demo.title">
+              All-in-One Blockchain Web 3.0 Platform
+            </h2>
+            
+            <p  data-i18n="demo.title1">
+
+              Welcome, you have found the Balance between all digital assets.
+              Let’s start digitizing!
+            
+            </p>
+
+            <p  data-i18n="demo.title2"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Platforms -->
+      <div class="row mt-10 wow " >
+        <div class="platforms">
+          <div class="row">
+            <div class="col-12">
+              <a href="https://exchange.balancenetwork.io" title="BalanceNetworkExchange" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/exchange.webp"></img> -->
+                <span class="link-border"  data-i18n="demo.menu.EXCHANGE">
+                  EXCHANGE
+                </span>
+              </a>
+
+              <a href="https://swap.balancenetwork.io" title="BalanceNetworkSwap" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/swap.webp"></img> -->
+                <span class="link-border"  data-i18n="demo.menu.SWAP">
+                  SWAP
+                </span>
+              </a>
+
+              <a href="https://multiswap.balancenetwork.io" title="BalanceNetworkMultiswap" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/multiswap.webp"></img> -->
+                <span class="link-border"  data-i18n="demo.menu.MultiSwap">
+                  MULTI SWAP
+                </span>
+              </a>
+
+              <a href="https://ido.balancenetwork.io" title="BalanceNetworkido" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/launchpad.webp"></img> -->
+                <span class="link-border" >
+                  IDO LAUNCHPAD
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="row mt-10">
+            <div class="col-12">
+              <a href="https://nft.balancenetwork.io" title="BalanceNetworknft" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/nft.webp" class="nft-icon"></img> -->
+                <span class="link-border"  data-i18n="demo.menu.nftmarket">
+                  NFT MARKETPLACE
+                </span>
+              </a>
+
+              <a href="https://market.balancenetwork.io" title="BalanceNetworkmarket" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/market.webp"></img> -->
+                <span class="link-border"  data-i18n="demo.menu.MARKET">
+                  MARKET
+                </span>
+              </a>
+
+              <a href="https://game.balancenetwork.io" title="BalanceNetworkgame" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/game.webp"></img> -->
+                <span class="link-border"  data-i18n="demo.menu.GAME">
+                  GAME
+                </span>
+              </a>
+
+              <a href="https://wallet.balancenetwork.io" title="BalanceNetworkgame" rel="nofollow" target="_blank">
+                <!-- <img src="./src/img/icons/wallet.webp"></img> -->
+                <span class="link-border"  data-i18n="demo.menu.WALLET">
+                  WALLET
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="swpbody">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/5.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/6.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/7.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/8.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/9.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/10.png" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="typewriter" style=" margin-left: 60px !important; margin-top: -50px !important; font-size: 10px !important; text-align: center !important; position: absolute; ">
+          <p class="h1" style="font-size: 20px !important; font-weight: 400;" id="text">Güney Soykan is a Turkish artist based in Amsterdam. He started his career after quitting dentistry and studying graphic design instead. He is currently working at Wieden+Kennedy Amsterdam. Throughout his career, he has won 10 Grand Prix’s in International Award Shows including two in Cannes Lions and a Black Pencil in D&AD. He was listed as #3 Art Director in the Cannes Lions Global Creativity Report and he was a Creative of the Year finalist in Ad Age’s A-List & Creativity Awards. His works have been published in various books and publications. </p>
+        </div>
+      </div>
+      <!-- 2. box -->
+      <div class="row mt-10 wow " >
+        
+        <div class="box2 col-12 mx-auto text-wrap">
+         
+          <p>
+            <span data-i18n="demo.menu.Send"></span><br />
+            <b style="text-shadow: #fbbe16">BALANCE</b><span data-i18n="demo.menu.realize"></span>
+          </p>
+          <a href="mailto:info@balancenetwork.io" class="buy-btn contact-btn btn-outline mb-4" title="Contact"
+            style="color: rgb(206, 206, 206); background-color: rgba(0, 0, 0, 0.7) !important; width: 200px;"
+         data-i18n="demo.menu.Contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="slideson2">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/bln1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/bln2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/bln3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/nfts/bln4.png" />
+            </div>
+           
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="aaaa" style="margin-left: -40px !important; margin-top: 20px !important; font-size: 10px !important; text-align: center !important;">
+          <p class="h12" style="font-size: 20px !important; font-weight: 400;" id="selam">Uniq NFT's on NFT marketplace </p>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- 6 box -->
+    <div class="row mt-30 wow ">
+      <div class="ecosystem_section">
+        <div class="ecosystem_header text-center text-white">
+          <!-- 6 box -->
+          <h2 class="general_header_text" data-i18n="demo.menu.box61"></h2>
+        </div>
+        <div class="ecosystem-boxes mt-20">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center flex-wrap" style="gap: 4em;">
+              <div class="ecosystem_box">
+                <div class="ecosystem_box_texts">
+                  <h3>All-in-One</h3>
+                  <p class="text-center" data-i18n="demo.menu.b1">
+          
+                  </p>
+
+                  <center>
+                    <a href="https://docs.balancenetwork.io/" rel="nofollow" target="_blank" title="Learn More" class="ln-btn ln-outline" data-i18n="demo.menu.morebtn"></a>
+                  </center>
+                </div>
+              </div>
+              <div class="ecosystem_box">
+                <div class="ecosystem_box_texts">
+                  <h3 data-i18n="demo.menu.bl1"></h3>
+                  <p class="text-center" data-i18n="demo.menu.b2">
+             
+                  </p>
+                  <center>
+                    <a href="https://docs.balancenetwork.io/" rel="nofollow" target="_blank" title="Learn More" class="ln-btn ln-outline" data-i18n="demo.menu.morebtn"></a>
+                  </center>
+                </div>
+              </div>
+
+              <div class="ecosystem_box">
+                <div class="ecosystem_box_texts">
+                  <h3 data-i18n="demo.menu.bl2"></h3>
+                  <p class="text-center" data-i18n="demo.menu.b3">
+                  
+                  </p>
+
+                  <center>
+                    <a href="https://docs.balancenetwork.io/" rel="nofollow" target="_blank" title="Learn More" class="ln-btn ln-outline" data-i18n="demo.menu.morebtn"></a>
+                  </center>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-center align-items-center flex-wrap mt-5" style="gap: 4em;">
+              <div class="ecosystem_box">
+                <div class="ecosystem_box_texts">
+                  <h3 data-i18n="demo.menu.bl3"></h3>
+                  <p class="text-center" data-i18n="demo.menu.b4">
+ 
+
+
+                  </p>
+
+                  <center>
+                    <a href="https://docs.balancenetwork.io/" rel="nofollow" target="_blank" title="Learn More" class="ln-btn ln-outline" data-i18n="demo.menu.morebtn"></a>
+                  </center>
+                </div>
+              </div>
+
+              <div class="ecosystem_box">
+                <div class="ecosystem_box_texts">
+                  <h3>BLN</h3>
+                  <p class="text-center" data-i18n="demo.menu.b5">
+                   
+                  </p>
+
+                  <center>
+                    <a href="https://docs.balancenetwork.io/" rel="nofollow" target="_blank" title="Learn More" class="ln-btn ln-outline" data-i18n="demo.menu.morebtn"></a>
+                  </center>
+                </div>
+              </div>
+
+              <div class="ecosystem_box">
+                <div class="ecosystem_box_texts">
+                  <h3>NFTs</h3>
+                  <p class="text-center" data-i18n="demo.menu.b6">
+
+
+
+
+                  </p>
+                  <center>
+                    <a href="https://docs.balancenetwork.io/" rel="nofollow" target="_blank" title="Learn More" class="ln-btn ln-outline" data-i18n="demo.menu.morebtn"></a>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- APP DOWNLOADS-->
+    <div class="row mt-30 wow " >
+      <h1 class="general_header_text"  data-i18n="demo.menu.section3t1"></h1><br><h1 class="general_header_text" data-i18n="demo.menu.section3t2"> TRANSACTION YOU CAN DO!</h1>
+      <h1 class="general_header_text2 mt-3" data-i18n="demo.menu.section3t3"></h1>
+      <div class="row mt-5">
+        <div class="col-12">
+
+          <div class="row">
+            <div class="exchange align-items-center d-flex justify-content-center" style="margin-right: 100px;">
+              <span style="margin-right: 40px;" class="app-btn" data-i18n="demo.menu.app1">
+                </span>
+              <a href="#" title="BalanceNetwork" rel="nofollow">
+                <i class="fab fa-apple"
+                  style="font-size: 40pt; color: white; margin-right: 40px; margin-top: -8px;"></i>
+              </a>
+              <a href="#" title="BalanceNetwork" rel="nofollow">
+                <i class="fab fa-google-play" style="font-size: 30pt; color: green;"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="wallet align-items-center d-flex justify-content-center">
+              <span style="margin-right: 40px;" class="app-btn text-white"  data-i18n="demo.menu.app2"></span>
+              <a href="#" title="BalanceNetwork" rel="nofollow">
+                <i class="fab fa-apple"
+                  style="font-size: 40pt; color: white; margin-right: 40px; margin-top: -8px;"></i>
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=io.balancenetwork.wallet" title="BalanceNetworkwallet" rel="nofollow" target="_blank">
+                <i class="fab fa-google-play" style="font-size: 30pt; color: green;"></i>
+              </a>
+            </div>
+
+            <div class="row mt-4">
+              <div class="exchange align-items-center d-flex justify-content-center">
+                <span class="app-btn"  data-i18n="demo.menu.app3"></span>
+                <a href="#" title="BalanceNetwork" rel="nofollow">
+                  <img src="src/img/bullicon.webp" alt="Bull Icon" class="bullimg" style="width: 80px; height:auto">
+                </a>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="row mt-30 wow ">
+      <h1 class="general_header_text">TOKENOMICS</h1>
+      <h1 class="general_header_text2 mt-3"  data-i18n="demo.menu.app4"></h1>
+      <h1 class="general_header_text2 mt-3"  data-i18n="demo.menu.app5"> </h1><a
+      href="https://www.bscscan.com/address/0xE90334c19c798C3A18d81b8cd16594247D5B19dd" rel="nofollow" title="Contract Address" target="_blank"
+      class="yellow-text general_header_text2 mt-3" style="font-size: 15px; color: black !important; ">0xE90334c19c798C3A18d81b8cd16594247D5B19dd</a>
+      <div class="col-12 d-flex justify-content-center align-items-center mt-10">
+        <div id="pie-chart" class="text-center mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- roadmap -->
+    <div class="row mt-30 wow " >
+      <h1 class="general_header_text" data-i18n="demo.menu.roadmap"></h1>
+      <div id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+          </div>
+          <div class="cd-timeline-content">
+            <h2 data-i18n="demo.menu.q1"></h2>
+            <p>
+            <p><strong id="title" style="color: #fbbe16 !important;" data-i18n="demo.menu.q1t"> </strong></p>
+            <ul class="ul-list-color">
+              <li data-i18n="demo.menu.q1l1"> <b style="font-size: 20px;">✓</b></li>
+              <li data-i18n="demo.menu.q1l2">  <b style="font-size: 20px;">✓</b></li>
+              <li data-i18n="demo.menu.q1l3"><b style="font-size: 20px;">✓</b></li>
+              <li data-i18n="demo.menu.q1l4"> <b style="font-size: 20px;">✓</b></li>
+              <li data-i18n="demo.menu.q1l5"> <b style="font-size: 20px;">✓</b></li>
+              <li data-i18n="demo.menu.q1l6"><b style="font-size: 20px;">✓</b></li>
+            </ul>
+            <p><strong class="ul-list-color" style="color: #fbbe16 !important;" data-i18n="demo.menu.q1t2">Set up community infrastructure </strong> </p>
+            <ul class="ul-list-color">
+              <li data-i18n="demo.menu.q1l7"><b style="font-size: 20px;">✓</b></li>
+              <li data-i18n="demo.menu.q1l8"> <b style="font-size: 20px;">✓</b></li>
+            </ul>
+            </p>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-movie">
+          </div> <!-- cd-timeline-img -->
+
+          <div class="cd-timeline-content">
+            <h2 data-i18n="demo.menu.q2">2. Quarter</h2>
+            <p> <strong style="color: #fbbe16 !important;" data-i18n="demo.menu.q2t"> Begin marketing </strong>
+            <ul>
+             <li  data-i18n="demo.menu.q2l1"></li>
+             <li  data-i18n="demo.menu.q2l2"></li>
+             <li  data-i18n="demo.menu.q2l3"></li>
+             <li  data-i18n="demo.menu.q2l4"></li>
+             <li  data-i18n="demo.menu.q2l5"></li>
+             <li  data-i18n="demo.menu.q2l6"></li>
+             <li  data-i18n="demo.menu.q2l7"></li>
+             <li  data-i18n="demo.menu.q2l8"></li>
+             <li  data-i18n="demo.menu.q2l9"></li>
+             <li  data-i18n="demo.menu.q2l10"></li>
+             <li  data-i18n="demo.menu.q2l11"></li>
+             <li  data-i18n="demo.menu.q2l12"></li>
+             <li  data-i18n="demo.menu.q2l13"></li>
+            </ul>
+            </p>
+
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+          </div> <!-- cd-timeline-img -->
+
+          <div class="cd-timeline-content">
+            <h2 data-i18n="demo.menu.q3">3. Quarter</h2>
+            <p>
+            <ul class="ul-list-color" >
+              <li data-i18n="demo.menu.q31"></li>
+              <li data-i18n="demo.menu.q32"></li>
+              <li data-i18n="demo.menu.q33"></li>
+              <li data-i18n="demo.menu.q34"></li>
+              <li data-i18n="demo.menu.q35"></li>
+              <li data-i18n="demo.menu.q36"></li>
+              <li data-i18n="demo.menu.q37"></li>
+            </ul>
+            </p>
+
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-location">
+          </div> <!-- cd-timeline-img -->
+
+          <div class="cd-timeline-content">
+            <h2 data-i18n="demo.menu.q4">4.Quarter
+            </h2>
+            <ul>
+              <li data-i18n="demo.menu.q41">Integrate with APIs that allow users to purchase BNB and BLN with fiat currency (credit card,
+                bank,
+                etc.) within the app</li>
+            </ul>
+
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+      </div>
+      <!-- roadmap -->
+    </div>
+
+    <!-- Footer -->
+    <div class="row mt-10 mx-auto" width="100%">
+      <footer class="footer mx-auto" width="110%">
+        <!-- Slider -->
+          <marquee scrolldelay="1" style="background-color: white; width: 110%; margin-left: -100px !important;" behavior="scroll" direction="left" class="mx-auto mobilmark">
+          <div class="marquee.img mx-auto">
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/bscscan.webp" alt="bscscan" height="auto" width="150px"  />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/bitcoin.webp" alt="bitcoin" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/coingecko.webp" alt="coingecko" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/coinmarketcap.webp" alt="coinmarket" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/metamask.webp" alt="metamask" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/multichain_logo.webp" alt="multichain" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/pancakeswap.webp" alt="pancakeswap" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/polygon.webp" alt="polygon" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/solana.webp" alt="solana" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/ethereum.webp" alt="ethereum" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/fantom.jpg" alt="fantomm" class="fantomm" height="auto" width="150px"/>
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/avalanche.webp" alt="avalanche" height="auto" width="150px" />
+            <img style="margin-right: 150px;" src="./src/img/partners_logo/mci-gold.webp" alt="mci-gold" height="auto" width="150px">
+          </div>
+        </marquee>      
+        
+        <!-- Slider END -->
+
+        <!-- Footer Content -->
+        <div class="footer_content container-fluid">
+          <div class="row mt-5 d-flex justify-content-around align-items-start">
+            <div class="col-md-3 mb-5 resp-top">
+              <div class="row">
+                <div class="test-box mx-auto">
+                  <p class="general_footer_text" style="text-align: left !important;" data-i18n="demo.menu.fb1">About</p>
+
+                  <div class="text-left">
+                    <a href="https://docs.balancenetwork.io/views/About/aboutus.html" title="BalanceNetworkabout" rel="nofollow" target="_blank" data-i18n="demo.menu.f1"> About Us </a>
+                    <a href="https://docs.balancenetwork.io/views/About/termsofuse.html" title="BalanceNetworktermofuse" rel="nofollow" target="_blank" data-i18n="demo.menu.f2"> Terms Of Use </a>
+                    <a href="https://docs.balancenetwork.io/views/About/riskcompliance.html" title="BalanceNetworkriskcompliance" rel="nofollow" target="_blank" data-i18n="demo.menu.f3"> Risk & Compilance
+                      Disclaimer
+                    </a>
+                    <a href="https://docs.balancenetwork.io/views/About/privacypolicy.html" title="BalanceNetworkPrivacyPolicy" rel="nofollow" target="_blank" data-i18n="demo.menu.f4"> Privacy Policy
+                      Statement</a>
+                    <a href="https://docs.balancenetwork.io/views/About/tokenlisting.html" title="BalanceNetworkTokenListing" rel="nofollow" target="_blank" data-i18n="demo.menu.f5"> Token Listing</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-5 resp-top">
+              <div class="row">
+                <div class="test-box mx-auto">
+                  <p class="general_footer_text" style="text-align: left !important;" data-i18n="demo.menu.fb2">Services</p>
+                  <a href="https://exchange.balancenetwork.io" title="BalanceNetworkExchange" rel="nofollow" target="_blank" data-i18n="demo.menu.f6">Exchange</a>
+                  <a href="https://nft.balancenetwork.io" title="BalanceNetworkNft" rel="nofollow" target="_blank" data-i18n="demo.menu.f7">NFT Marketplace</a>
+                  <a href="https://ido.balancenetwork.io" title="BalanceNetworkido" rel="nofollow" target="_blank" data-i18n="demo.menu.f8">IDO Launchpad</a>
+                  <a href="https://docs.balancenetwork.io/views/Support/tpsd.html" title="BalanceNetworkMarket" rel="nofollow" target="_blank" data-i18n="demo.menu.f9">Third Party Software Disclaimer</a>
+                  <a href="https://swap.balancenetwork.io" title="BalanceNetworkSwap" rel="nofollow" target="_blank" data-i18n="demo.menu.f10">Swap</a>
+                  <a href="https://multiswap.balancenetwork.io" title="BalanceNetworkMultiSwap" rel="nofollow" target="_blank" data-i18n="demo.menu.f11">MultiSwap</a>
+                  <a href="https://wallet.balancenetwork.io" title="BalanceNetworkWallet" rel="nofollow" target="_blank" data-i18n="demo.menu.f12">Mobile Wallet</a>
+                  <a href="https://wallet.balancenetwork.io" title="BalanceNetworkWallet" rel="nofollow" target="_blank" data-i18n="demo.menu.f13">Web Wallet</a>
+                  <a href="https://game.balancenetwork.io" title="BalanceNetworkGame" rel="nofollow" target="_blank" data-i18n="demo.menu.f14">Game Zone</a>
+                  <a href="https://www.bscscan.com/address/0xE90334c19c798C3A18d81b8cd16594247D5B19dd" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f15">Explorer</a>
+                  <a href="#" title="BalanceNetworkTokenBridge" target="_blank" data-i18n="demo.menu.f16">Token Bridge</a>
+                  <a href="#" title="BalanceNetworkNftBridge" target="_blank" data-i18n="demo.menu.f17"> NFT Bridge</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-5 resp-top">
+              <div class="row">
+                <div class="test-box mx-auto">
+                  <p class="general_footer_text" style="text-align: left !important;" data-i18n="demo.menu.fb3">Support</p>
+                  <a href="https://docs.balancenetwork.io/views/Support/feespolicy.html" title="BalanceNetworkFeeSpolicy" rel="nofollow" target="_blank" data-i18n="demo.menu.f18">Fees Policy</a>
+                  <a href="https://docs.balancenetwork.io/views/Support/tpsd.html" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f19">Third Party
+                    Software
+                    Disclaimer</a>
+                  <a href="https://docs.balancenetwork.io/views/Support/psua.html" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f20">Pool Service User
+                    Agreement </a>
+                  <a href="https://docs.balancenetwork.io/views/Support/sua.html" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f21">Staking User Agreement
+                  </a>
+                  <a href="https://docs.balancenetwork.io/views/Support/bst.html" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f22">Bridge Service Terms</a>
+                  <a href="https://docs.balancenetwork.io/views/Support/dst.html title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f23">DeFi Service Terms </a>
+                  <a href="https://docs.balancenetwork.io/views/Support/verification.html" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f24">Verification</a>
+                  <a href="https://docs.balancenetwork.io/views/Support/learn.html" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f25">Learn</a>
+                  <a href="https://docs.balancenetwork.io/views/Support/career.html" title="BalanceNetworkdocs" rel="nofollow" target="_blank" data-i18n="demo.menu.f26">Career</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 resp-top">
+              <div class="row">
+                <div class="test-box mx-auto">
+                  <p class="general_footer_text" style="text-align: left !important;" data-i18n="demo.menu.fb4">Community</p>
+
+                  <div class="row">
+                    <div class="col-12 item social">
+                      <a href="https://twitter.com/balance_web3" title="BalanceNetworkTwitter" rel="nofollow" target="_blank" class="social"><i
+                          class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com/balancenetworkweb3/" title="BalanceNetworkInstagram" rel="nofollow" target="_blank" class="social mr-10"><i
+                          class="fab fa-instagram"></i>
+                      </a><a href="http://balancenetwork.medium.com" title="BalanceNetworkMedium" rel="nofollow" target="_blank" class="social r-m-r"><i
+                          class="fab fa-medium"></i></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 item social">
+                      <a href="https://discord.com/invite/S9397zV3ay" title="BalanceNetworkDiscord" rel="nofollow" target="_blank" class="social"><i
+                          class="fab fa-discord"></i></a>
+                      <a href="https://www.twitch.tv/balancenetwork" title="BalanceNetworkTwitch" rel="nofollow" target="_blank" class="social mr-10"><i
+                          class="fab fa-twitch"></i>
+                      </a><a href="https://t.me/BalanceNetwork" title="BalanceNetworkTelegram" rel="nofollow" target="_blank" class="social r-m-r"><i
+                          class="fab fa-telegram"></i></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 item social">
+                      <a href="https://www.reddit.com/user/balancenetwork" title="BalanceNetworkReddit" rel="nofollow" target="_blank" class="social"><i
+                          class="fab fa-reddit"></i></a>
+                      <a href="https://tr.pinterest.com/NFTBalanceNetwork/_created/" title="BalanceNetworkPinterest" rel="nofollow" target="_blank"
+                        class="social mr-10"><i class="fab fa-pinterest"></i>
+                      </a><a href="https://www.linkedin.com/in/balance-network-900956236/" title="BalanceNetworkLinkedin" rel="nofollow" target="_blank"
+                        class="social r-m-r"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Content END -->
+
+        <p class="yellow-line mt-2"></p>
+
+        <!-- COPYRIGHT -->
+        <div class="row mt-2">
+          <div class="text-center mb-2">
+            <p class="copyright">
+              2022 <span class="brand-title">©</span> All rights reserved by
+              <span class="brand-title">Balance Network</span>
+            </p>
+          </div>
+        </div>
+        <!-- COPYRIGHT END -->
+      </footer>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="src/js/bootstrap.min.js"></script>
+  <script src="src/js/jquery.min.js"></script>
+  <script src="src/js/wow.min.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        boxClass: 'wow',      // default
+        animateClass: 'animated', // default
+        offset: 0,          // default
+        mobile: true,       // default
+        live: true        // default
+      }
+    )
+    wow.init();
+  
+  </script>
+  <script>
+      AOS.init();
+  </script>
+  <script src="src/js/textslide.js"></script>
+  <script src="src/js/textslidetwo.js"></script>
+  <script src="src/js/mdb.min.js"></script>
+  <script src="src/js/morris.min.js"></script>
+  <script src="src/js/raphael-min.js"></script>
+  <script src="src/js/sweetalert2.all.min.js"></script>
+  <script src="src/js/all.min.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/smtp.js"></script>
+  <script src="src/js/sendMail.js"></script>
+  <script src="src/js/chart.js"></script>
+  <script src="./src/js/tr.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      autoplay: {
+        delay: 1500
+      },
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94
+      },
+     
+    });
+  </script>
+ 
+</body>
+
+</html>

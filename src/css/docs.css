@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --bg-color: rgb(61, 70, 85);
+  --yellow: #fbbe16;
+  --box-colors: #000000;
+}
+
+html,
+body {
+  background: linear-gradient(
+    80deg,
+    rgb(55, 63, 78) 20%,
+    rgba(23, 25, 29, 1) 83%
+  );
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.05;
+  background: url("../../assets/img/bn-logo-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: var(--box-colors);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+y
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+}
+.sidenav:hover {
+  box-shadow: rgba(253, 215, 0, 0.973) 0 0 5px;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  z-index: 2;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #fbbe16;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 14px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(71, 73, 71);
+  color: #fbbe16;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #000000;
+  padding-left: 8px;
+  z-index: 2;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.content-box {
+  background-color: var(--box-colors);
+  width: 1200px;
+  height: 500px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 300ms all;
+  word-wrap: break-word;
+  padding: 20px;
+  margin-top: 20px;
+}
+.content-box:hover {
+  box-shadow: rgba(253, 215, 0, 0.973) 0 0 15px;
+}
+
+.content-box h1 {
+  color: var(--yellow);
+  font-size: 30pt;
+  padding-bottom: 40px;
+}
+
+.content-box p {
+  font-size: 18pt;
+  color: #fff;
+}
