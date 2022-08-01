@@ -1,26 +1,27 @@
 .slideson {
 
   margin-top:-150px !important;
-  margin-left: 5% !important;
+  margin-left: -100px !important;
   width: 300px;
-  height:450px;
+  height:400px;
   margin: auto;
   -webkit-perspective: 900px;
   perspective: 900px;
 }
 .swpbody {
   position: absolute;
-  margin-left: -50px;
-  margin-top: -70px;
+  margin-left: -300px !important;
+  margin-top: -200px; 
+
 }
 .swiper {
   width: 200px;
-  height: 400px;
+  height: 350px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
+  margin-left: 10%;
+  margin-top: -200px;
 }
 
 .swiper-slide {
@@ -30,6 +31,7 @@
 
 .swiper-slide img {
   display: block;
+  height: 400px;
   width: 100%;
 }
 
@@ -327,7 +329,7 @@ Credit */
 .typewriter {
     margin-top: -50px !important;
 
-    width: 500px;  
+    width: 300px;  
     color: black;
     font-size: 6px !important;
 
@@ -361,5 +363,15 @@ width: 4px;
 @media screen and (max-width:1400px){
   .swpbody {
    display: none;
+  }
+}
+@media screen and (max-width:1550px){
+  .swpbody {
+   display: none;
+  }
+}
+@media screen and (max-width:1698px){
+  .swpbody {
+   margin-left: -230px !important;
   }
 }

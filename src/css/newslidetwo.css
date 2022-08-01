@@ -1,12 +1,13 @@
 .slideson2 {
-  margin-top: -400px !important;
+  margin-top: -450px !important;
   position: absolute;
-  margin-left: 80% !important;
+  margin-left: 1200px !important;
   width: 200px;
   height: 200px;
   margin: auto;
   -webkit-perspective: 600px;
   perspective: 600px;
+  float: right !important;
   
 }
 
@@ -299,7 +300,7 @@
 .aaaa {
   margin-top: -50px !important;
 
-  width: 400px;
+  width: 200px;
   color: black;
   font-size: 6px !important;
 }
@@ -336,6 +337,11 @@
   }
 }
 @media screen and (max-width:1400px){
+  .slideson2 {
+   display: none;
+  }
+}
+@media screen and (max-width:1550px){
   .slideson2 {
    display: none;
   }
